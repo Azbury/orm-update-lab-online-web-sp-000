@@ -58,4 +58,8 @@ class Student
     self.new(row[1], row[2], row[0])
   end
 
+  def self.create (name, grade)
+    new_student = self.new(name, grade)
+    new_student.save
+  end
 end
